@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">aero123</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/aerodb</property>
+        <property name="hibernate.connection.username">aero</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="show_sql">true</property>
+        <property name="hbm2ddl.auto">create</property>
+       
+        <!-- <mapping class="com.evry.tableperhierarchy.Customer"/>
+        <mapping class="com.evry.tableperhierarchy.PartialCustomer"/>
+        <mapping class="com.evry.tableperhierarchy.RegCustomer"/> -->
+        
+       <!--  <mapping class="com.evry.tableperhierarchy.hospital.Patient"/>
+        <mapping class="com.evry.tableperhierarchy.hospital.InPatient"/>
+        <mapping class="com.evry.tableperhierarchy.hospital.OutPatient"/> -->
+        
+        <!-- <mapping class="com.evry.tableperconcreate.hospital.Patient"/>
+        <mapping class="com.evry.tableperconcreate.hospital.InPatient"/>
+        <mapping class="com.evry.tableperconcreate.hospital.OutPatient"/> -->
+       <!--  
+        <mapping class="com.evry.tableperconcreate.bankAccount.Bank"/>
+        <mapping class="com.evry.tableperconcreate.bankAccount.BranchOne"/>
+        <mapping class="com.evry.tableperconcreate.bankAccount.BranchTwo"/> -->
+        
+        <mapping class="com.evry.tablepersubclass.Customer"/>
+        <mapping class="com.evry.tablepersubclass.PartialCustomer"/>
+        <mapping class="com.evry.tablepersubclass.RegCustomer"/>
+        
+        
+    </session-factory>
+</hibernate-configuration>
